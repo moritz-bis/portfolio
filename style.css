@@ -237,7 +237,7 @@ text {
 }
 
 .contents-main-item:hover img {
-  transform: scale(1.2); /* Skaliert das Bild */
+  transform: scale(1.15); /* Skaliert das Bild */
 }
 
 .contents-item {
