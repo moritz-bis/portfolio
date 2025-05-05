@@ -286,10 +286,14 @@ text {
   box-sizing: border-box;
 }
 
-.contents-item:hover .contents-overlay{
-  opacity: 1; /* Zeigt den Text beim Hover */
-}
+/* .contents-item:hover .contents-overlay{
+  opacity: 1;
+} */
 
+.contents-item:hover .contents-overlay,
+.contents-item:focus .contents-overlay {
+  opacity: 1;
+}
 
 /* === project pages styling === */
 
