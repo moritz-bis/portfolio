@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Moritz Bisjak</title>
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Everywhere same same start -->
+  <!-- Schriftarten einbinden -->
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+JP:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!--
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>; fluid?
+  font-style: normal;
+  -->
+
+  <!-- Font Noto Sans JP ... <weight>: Use a value from 100 to 900 -->
+  <!-- Font Noto Sans ... <weight>: Use a value from 100 to 900 -->
+  <!-- Font Bodoni Moda ... <weight>: Use a value from 400 to 900 -->   
+  <!-- font-family PT Mono, monospace;-->   
+  <!-- font-family: "IBM Plex Sans JP", sans-serif; font-weight: 100-700;-->
+
+  <style>
+
+    body {
+      overflow: hidden;  /* Deaktiviert vertikales Scrollen */
+      justify-content: center;
+    }
+
+    h1 {
+      font-family: "Bodoni Moda", serif;
+      font-weight: 400;
+      color: #FF5338;
+      font-size: 3.5rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(10%);
+      margin-top: -2rem;
+    }
+
+    h2 {
+      font-family: "IBM Plex Sans JP", sans-serif;
+      font-weight: 200;
+      color: #FF5338;
+      font-size: 3.5rem;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(0%);
+      margin-top: -1.5rem;
+    }
+
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <!-- content -->
+    <a href="content.html" class="nav-item">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="content-svg">
+        <path id="content-path" d="M0,50 Q25,50 50,50 Q75,50 100,50" fill="transparent" stroke="transparent">
+          <animate 
+            attributeName="d"
+            dur="2s"
+            repeatCount="indefinite"
+            values="
+              M0,50 Q25,50 50,50 Q75,50 100,50;
+              M0,50 Q25,35 50,50 Q75,65 100,50;
+              M0,50 Q25,50 50,50 Q75,50 100,50;
+              M0,50 Q25,65 50,50 Q75,35 100,50;
+              M0,50 Q25,50 50,50 Q75,50 100,50
+            "
+            keyTimes="0;0.25;0.5;0.75;1"
+            calcMode="linear"
+            begin="indefinite" 
+            id="contentAnimation"
+          />
+        </path>
+
+        <text>
+          <textPath href="#content-path" startOffset="50%" text-anchor="middle">
+            content
+          </textPath>
+        </text>
+      </svg>
+    </a>
+
+
+    <!-- about-->
+    <a href="about.html" class="nav-item">
+      <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="rotating-about">
+        <path id="about-path" d="M0,50 Q25,50 50,50 Q75,50 100,50" fill="transparent" stroke="transparent"> </path>
+        <text>
+          <textPath href="#about-path" startOffset="50%" text-anchor="middle">
+            about
+          </textPath>
+        </text>
+      </svg>
+    </a>
+  </nav>
+
+  <!-- mein Name -->
+  <h1>moritz bisjak</h1>
+  <h2>|</h2>
+
+  <!-- Das Karussell -->
+  <div class="carousel-container">
+    <div class="carousel-content">
+      <div class="carousel-item">portafoglio</div>
+      <div class="carousel-item">portfolio</div>
+      <div class="carousel-item">ポートフォリオ</div>
+      <div class="carousel-item">Portfolio</div>
+      <div class="carousel-item">portfeuille</div>
+           
+      <div class="carousel-item">portafoglio</div>
+      <div class="carousel-item">portfolio</div>
+      <div class="carousel-item">ポートフォリオ</div>
+      <div class="carousel-item">Portfolio</div>
+      <div class="carousel-item">portfeuille</div>
+
+      <div class="carousel-item">portafoglio</div>
+      <div class="carousel-item">portfolio</div>
+      <div class="carousel-item">ポートフォリオ</div>
+      <div class="carousel-item">Portfolio</div>
+      <div class="carousel-item">portfeuille</div>
+
+      <div class="carousel-item">portafoglio</div>
+      <div class="carousel-item">portfolio</div>
+      <div class="carousel-item">ポートフォリオ</div>
+      <div class="carousel-item">Portfolio</div>
+      <div class="carousel-item">portfeuille</div>
+    </div>
+  </div>
+
+  <script>
+    //Navbar Animation
+    const contentSVG = document.querySelector('.content-svg');
+    const aboutSVG = document.querySelector('.about-svg');
+
+    const contentAnimation = document.getElementById('contentAnimation');
+    const aboutAnimation = document.getElementById('aboutAnimation');
+
+    contentSVG.addEventListener('mouseenter', () => {
+      contentAnimation.beginElement();
+    });
+
+    contentSVG.addEventListener('mouseleave', () => {
+      contentAnimation.endElement();
+    });
+    
+    //Carousel in der Mitte
+    let lastExecution = 0;
+    document.addEventListener('mousemove', (event) => {
+    const now = Date.now();
+    if (now - lastExecution < 50) return;
+    lastExecution = now;
+
+    const carouselContainer = document.querySelector('.carousel-container');
+    const carouselContent = document.querySelector('.carousel-content');
+
+    const mouseY = event.clientY;
+    const windowHeight = window.innerHeight;
+
+    const scrollPercentage = mouseY / windowHeight;
+
+    const maxScroll = carouselContent.scrollHeight - carouselContainer.offsetHeight;
+    const scrollPosition = maxScroll * scrollPercentage;
+
+    carouselContent.style.transform = `translateY(-${scrollPosition}px)`;
+    });
+  </script>
+
+
+</body>
+</html>
