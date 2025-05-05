@@ -237,7 +237,7 @@ text {
 }
 
 .contents-main-item:hover img {
-  transform: scale(1.15); /* Skaliert das Bild */
+  transform: scale(1.15);
 }
 
 .contents-item {
@@ -350,10 +350,17 @@ text {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  object-fit: contain;
 }
 .project-main-large-right-picture  {
   flex: 5;
   justify-content: flex-start;
+  object-fit: contain;
+}
+.project-main-large-right-picture img {
+  height: auto;
+  width: 100%;
+  object-fit: contain;
 }
 .project-main-large-right-text  {
   flex: 1;
