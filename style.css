@@ -419,6 +419,18 @@ text {
   height: auto;
   width: auto;
 }
+.project-main-banner-single {
+  flex: 1;
+  width: 80vw;
+  object-fit: contain;
+  justify-content: center;
+}
+.project-main-banner-single img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
 
 
 .project-navigation {
