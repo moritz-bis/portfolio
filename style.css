@@ -300,7 +300,7 @@ text {
 }
 .project-cover-container {
   flex: 4;
-  min-width: 500px;
+  min-width: 400px;
 }
 .project-cover-container img {
     width: 100%;
@@ -404,11 +404,13 @@ text {
   align-items: center;
   justify-content: center;
   object-fit: contain;
+  flex-wrap: wrap;
 }
 .project-main-banner-picture {
   flex: 1;
   justify-content: center;
   display: flex;
+  min-width: 400px;
 }
 .project-main-banner-picture img {
   max-width: 100%;
