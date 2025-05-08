@@ -296,10 +296,11 @@ text {
   max-width: 90%;
   gap: 50px;
   align-items: flex-end;
-
+  flex-wrap: wrap;
 }
 .project-cover-container {
   flex: 4;
+  min-width: 500px;
 }
 .project-cover-container img {
     width: 100%;
@@ -311,6 +312,7 @@ text {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  min-width: 300px;
 }
 
 
@@ -372,10 +374,12 @@ text {
   align-items: center;
   justify-content: center;
   object-fit: contain;
+  flex-wrap: wrap;
 }
 .project-main-small-picture {
   flex: 3;
   max-height: 600px;
+  min-width: 400px;
   justify-content: center;
   display: flex;
 }
@@ -388,6 +392,7 @@ text {
 }
 .project-main-small-text {
   flex: 1;
+  min-width: 300px;
 }
 
 
