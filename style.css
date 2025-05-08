@@ -28,6 +28,7 @@ h1 {
 
 /* ehemalig contens überschriften */
 h2 {
+  font-size: 20px;
 }
 
 /* projekte Unterüberschrift */
@@ -277,15 +278,11 @@ text {
   align-items: center;
   justify-content: center;
   text-align: center;
-  opacity: 0;              /* Unsichtbar im Normalzustand */
+  opacity: 0;
   transition: opacity 0.3s ease;
   padding: 1rem;
   box-sizing: border-box;
 }
-
-/* .contents-item:hover .contents-overlay{
-  opacity: 1;
-} */
 
 .contents-item:hover .contents-overlay,
 .contents-item:focus .contents-overlay {
@@ -450,7 +447,7 @@ text {
 
 .about-top {
   display: flex;
-  max-width: 300px;
+  max-width: 400px;
   justify-content: center;
   flex-direction: column;
   gap: 40px;
