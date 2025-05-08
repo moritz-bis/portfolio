@@ -451,6 +451,7 @@ text {
   justify-content: center;
   flex-direction: column;
   gap: 40px;
+  margin-bottom: 100px;
 }
 .about-top-picture {
   display: flex;
@@ -463,15 +464,18 @@ text {
   object-fit: contain;
 }
 
+
 .about-skills {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   max-width: 70%;
   max-height: 600px;
   gap: 80px;
   align-items: flex-start;
   justify-content: center;
   object-fit: contain;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 .about-skills-table {
   font-family: "Cutive Mono", monospace;
@@ -488,21 +492,6 @@ text {
 .about-skills-table td:last-child {
   text-align: right;
   color: #bfbfbf;
-}
-
-
-
-
-.about-skills-text {
-  flex: 1;
-  max-height: 300px;
-  justify-content: center;
-}
-.about-skills-text {
-  flex: 1;
-  max-height: 300px;
-  justify-content: center;
-  display: flex;
 }
 
 
