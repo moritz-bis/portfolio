@@ -504,6 +504,7 @@ text {
   vertical-align: top;
 }
 
+
 .about-banner {
   display: flex;
   flex-wrap: wrap;
@@ -513,12 +514,6 @@ text {
   justify-content: center;
   object-fit: contain;
 }
-/* .about-banner-picture {
-  flex: 1;
-  max-height: 500px;
-  display: flex;
-  min-width: var(--min-width-small);
-} */
 .about-banner img {
   max-width: 100px;
   max-height: 150px;
@@ -526,3 +521,48 @@ text {
   width: auto;
   object-fit: contain;
 }
+
+
+/* === work styling === */
+
+.work-banner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-bottom: 30px;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+}
+.work-banner-picture {
+  flex: 1;
+  width: 400px;
+  min-width: var(--min-width);
+  display: flex;
+}
+.work-banner-picture img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+
+
+.work-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  min-width: var(--min-width);
+  /* max-height: 600px; */
+  margin-bottom: var(--margin-bottom);
+  gap: 80px;
+  object-fit: contain;
+}
+/* .project-main-small-text {
+  flex: 1;
+  min-width: var(--min-width-small);
+} */
