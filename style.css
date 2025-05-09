@@ -460,29 +460,70 @@ text {
   margin-bottom: 100px;
 }
 .about-skills-table {
-  /* font-family: "Cutive Mono", monospace;
+  font-family: "Cutive Mono", monospace;
   font-size: 14px;
   color: #000000;
-  font-weight: 400; */
+  font-weight: 400;
   width: 250px;
 }
-
 .about-skills-table td:first-child {
   text-align: left;
   padding-right: 7px;
 }
-
 .about-skills-table td:last-child {
   text-align: right;
   color: #bfbfbf;
 }
 
+
 .about-cv {
   display: flex;
-  width: 30%;
+  width: 45%;
   min-width: var(--min-width);
   justify-content: center;
   flex-direction: column;
   gap: 40px;
+  margin-top: 20px;
   margin-bottom: 100px;
+}
+.about-cv-table {
+  font-family: "Cutive Mono", monospace;
+  font-size: 14px;
+  color: #000000;
+  font-weight: 400;
+}
+.about-cv-table td:first-child {
+  text-align: left;
+  padding-right: 7px;
+  padding-bottom: 15px;
+  vertical-align: top;
+}
+.about-cv-table td:last-child {
+  text-align: right;
+  color: #bfbfbf;
+  padding-bottom: 15px;
+  vertical-align: top;
+}
+
+.about-banner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  margin-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+}
+/* .about-banner-picture {
+  flex: 1;
+  max-height: 500px;
+  display: flex;
+  min-width: var(--min-width-small);
+} */
+.about-banner img {
+  max-width: 150px;
+  max-height: 150px;
+  height: auto;
+  width: auto;
+  object-fit: contain;
 }
