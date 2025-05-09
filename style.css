@@ -558,7 +558,7 @@ text {
   width: 40%;
   min-width: var(--min-width);
   /* max-height: 600px; */
-  margin-bottom: var(--margin-bottom);
+  margin-bottom: 30px;
   gap: 80px;
   object-fit: contain;
 }
