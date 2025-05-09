@@ -500,7 +500,6 @@ text {
 }
 .about-cv-table td:last-child {
   text-align: right;
-  color: #bfbfbf;
   padding-bottom: 15px;
   vertical-align: top;
 }
@@ -509,7 +508,7 @@ text {
   display: flex;
   flex-wrap: wrap;
   width: 40%;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   align-items: center;
   justify-content: center;
   object-fit: contain;
@@ -521,7 +520,7 @@ text {
   min-width: var(--min-width-small);
 } */
 .about-banner img {
-  max-width: 150px;
+  max-width: 100px;
   max-height: 150px;
   height: auto;
   width: auto;
