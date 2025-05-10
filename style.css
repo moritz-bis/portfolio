@@ -11,6 +11,23 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: 'Bodoni Moda';
+  src: url('fonts/BodoniModa_48pt-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Cutive Mono';
+  src: url('fonts/CutiveMono-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-Thin.ttf');
+  font-weight: 100;
+}
+
 body {
   background-color: #FFFFFF;
   margin: 0;
@@ -27,31 +44,29 @@ h1 {
   font-family: "Bodoni Moda", serif;
   font-weight: 400;
   color: #000000;
-  font-size: 3.5rem;
+  font-size: 56px;
   padding-bottom: 10px;
 }
 
 /* projekte Unterüberschrift */
 h3 {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 100;
   font-size: 20px;
   color: #000000;
   padding-bottom: 20px;
 }
 
+/* projekte Navigation unten */
 h4 {
   font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 100;
-  font-size: 24px;
+  font-size: 20px;
   color: #FF5338;
   padding-bottom: 20px;
-  align-items: center;
-  justify-content: center;
 }
 
+/* footer */
 h6 {
   font-family: "Cutive Mono", monospace;
   font-size: 16px;
@@ -65,7 +80,6 @@ p {
   font-family: "Cutive Mono", monospace;
   font-size: 14px;
   color: #000000;
-  font-weight: 400;
   line-height: 1,2;
 }
 
