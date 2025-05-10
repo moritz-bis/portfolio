@@ -13,18 +13,18 @@
 
 @font-face {
   font-family: 'Bodoni Moda';
-  src: url('.fonts/BodoniModa_48pt-Regular.ttf');
+  src: url('./fonts/BodoniModa_48pt-Regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Cutive Mono';
-  src: url('.fonts/CutiveMono-Regular.ttf');
+  src: url('./fonts/CutiveMono-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('.fonts/Montserrat-Thin.ttf');
+  src: url('./fonts/Montserrat-Thin.ttf');
   font-weight: 100;
 }
 
@@ -61,7 +61,7 @@ h3 {
 h4 {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
-  font-size: 22px;
+  font-size: clamp(18px, 3vw, 22px);
   color: #FF5338;
   padding-bottom: 20px;
 }
