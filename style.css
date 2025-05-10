@@ -13,18 +13,18 @@
 
 @font-face {
   font-family: 'Bodoni Moda';
-  src: url('fonts/BodoniModa_48pt-Regular.ttf');
+  src: url('.fonts/BodoniModa_48pt-Regular.ttf');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Cutive Mono';
-  src: url('fonts/CutiveMono-Regular.ttf');
+  src: url('.fonts/CutiveMono-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url('fonts/Montserrat-Thin.ttf');
+  src: url('.fonts/Montserrat-Thin.ttf');
   font-weight: 100;
 }
 
