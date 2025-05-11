@@ -1,6 +1,7 @@
 
 :root {
   --min-width: 350px;
+  --max-width: 1500px;
   --min-width-small: 250px;
   --margin-bottom: 200px;
 }
@@ -84,16 +85,7 @@ p {
 }
 
 .stress {
-  /* font-family: "Courier Prime", monospace;
-  font-weight: 700;
-  font-style: normal;
-  align-items: center;
-  color: #000000;
-  font-size: 13px;
-  margin-bottom: 10px; */
-
   text-decoration-line: underline;
-  /* text-decoration-style: wavy; */
   text-decoration-thickness: 2px;
   text-decoration-color: #FF5338;
 }
@@ -205,6 +197,7 @@ text {
   display: flex;
   width: 30%;
   min-width: var(--min-width);
+  max-width: var(--max-width);
   justify-content: center;
   flex-direction: column;
   gap: 40px;
@@ -226,8 +219,9 @@ text {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  max-width: 70%;
-  max-height: 600px;
+  width: 70%;
+  min-width: var(--min-width);
+  max-width: var(--max-width);
   gap: 80px;
   align-items: flex-start;
   justify-content: center;
@@ -255,6 +249,7 @@ text {
   display: flex;
   width: 45%;
   min-width: var(--min-width);
+  max-width: var(--max-width);
   justify-content: center;
   flex-direction: column;
   gap: 40px;
@@ -282,7 +277,7 @@ text {
 .about-minime {
   display: flex;
   flex-wrap: wrap;
-  width: 40%;
+  width: 100px;
   margin-bottom: 20px;
   align-items: center;
   justify-content: center;
@@ -329,10 +324,11 @@ text {
   display: block;
   background-color: #fff;
   border-radius: 5px;
-  transition: transform 0.3s ease;
+  /* transition: outline 0.3s ease; */
 }
 .contents-main-item:hover img {
-  transform: scale(1.15);
+  outline: 2px solid #FF5338;
+  outline-offset: -2px;
 }
 
 .contents-item {
@@ -363,8 +359,8 @@ text {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 83, 56, 0.8);
-  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #252525;
   font-family: "Cutive Mono", monospace;
   font-weight: 400;
   font-style: normal;
@@ -383,6 +379,26 @@ text {
   opacity: 1;
 }
 
+.divider {
+  width: clamp(350px, 80vw, 1200px);
+  margin-bottom: 150px;
+  margin-top: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.divider-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  text-align: center;
+  font-family: "Cutive Mono", monospace;
+  font-size: 16px;
+  color: #FF5338;
+  font-weight: 400;
+}
 
 /* === project pages styling === */
 
@@ -390,14 +406,19 @@ text {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  max-width: 90%;
+  justify-content: center;
+  width: 90%;
+  max-width: var(--max-width);
   gap: 50px;
   margin-bottom: var(--margin-bottom);
 }
 .project-cover-container {
   flex: 4;
-  min-width: 55dvw;
+  width: 55dvw;
+  min-width: var(--min-width);
   object-fit: contain;
+  align-items: flex-end;
+  justify-content: center;
 }
 .project-cover-container img {
   width: 100%;
@@ -414,7 +435,8 @@ text {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  max-width: 70%;
+  width: 70%;
+  max-width: var(--max-width);
   margin-bottom: var(--margin-bottom);
   gap: 80px;
   object-fit: contain;
@@ -451,8 +473,8 @@ text {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  max-width: 70%;
-  /* max-height: 600px; */
+  width: 70%;
+  max-width: var(--max-width);
   margin-bottom: var(--margin-bottom);
   gap: 80px;
   object-fit: contain;
@@ -480,6 +502,7 @@ text {
   display: flex;
   flex-wrap: wrap;
   width: 80%;
+  max-width: var(--max-width);
   margin-bottom: var(--margin-bottom);
   gap: 30px;
   align-items: center;
@@ -504,6 +527,7 @@ text {
 .project-navigation {
   display: flex;
   width: 80%;
+  max-width: var(--max-width);
   margin-bottom: 80px;
 }
 .project-navigation-left {
@@ -525,7 +549,7 @@ text {
   display: flex;
   flex-wrap: wrap;
   width: 90vw;
-  max-width: 1500px;
+  max-width: var(--max-width);
   margin-bottom: var(--margin-bottom);
   gap: 30px;
   align-items: center;
@@ -553,6 +577,7 @@ text {
   flex-wrap: wrap;
   flex-direction: column;
   width: 50vw;
+  min-width: var(--min-width);
   max-width: 800px;
   margin-bottom: var(--margin-bottom);
   gap: 30px;
