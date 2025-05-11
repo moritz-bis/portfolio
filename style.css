@@ -93,7 +93,7 @@ p {
   margin-bottom: 10px; */
 
   text-decoration-line: underline;
-  text-decoration-style: wavy;
+  /* text-decoration-style: wavy; */
   text-decoration-thickness: 2px;
   text-decoration-color: #FF5338;
 }
@@ -363,8 +363,8 @@ text {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #292929;
+  background-color: rgba(255, 83, 56, 0.8);
+  color: #ffffff;
   font-family: "Cutive Mono", monospace;
   font-weight: 400;
   font-style: normal;
