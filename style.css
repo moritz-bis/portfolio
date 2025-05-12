@@ -381,8 +381,8 @@ text {
 
 .divider {
   width: clamp(350px, 80vw, 1200px);
-  margin-bottom: 150px;
-  margin-top: 50px;
+  margin-bottom: 130px;
+  margin-top: 40px;
   text-align: center;
   display: flex;
   align-items: center;
@@ -398,6 +398,84 @@ text {
   font-size: 16px;
   color: #FF5338;
   font-weight: 400;
+}
+
+
+/* === work styling === */
+
+.work-banner {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90vw;
+  max-width: var(--max-width);
+  margin-bottom: var(--margin-bottom);
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+}
+.work-banner-picture {
+  flex: 1;
+  display: flex;
+  width: 350px;
+  min-width: var(--min-width);
+  align-items: center;
+  justify-content: center;
+}
+.work-banner-picture img {
+  max-width: 350px;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+
+.work-column {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 50vw;
+  min-width: var(--min-width);
+  max-width: 800px;
+  margin-bottom: var(--margin-bottom);
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  object-fit: contain;
+}
+.work-column-picture {
+  flex: 1;
+  display: flex;
+  width: 100%;
+  min-width: var(--min-width);
+  align-items: center;
+  justify-content: center;
+}
+.work-column-picture img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
+
+.work-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  max-width: 700px;
+  min-width: var(--min-width);
+  margin-bottom: 30px;
+  gap: 80px;
+  object-fit: contain;
+}
+
+.work-link {
+  all: unset;
+  color: inherit;
+  text-decoration: none;
 }
 
 /* === project pages styling === */
@@ -539,77 +617,4 @@ text {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-}
-
-
-
-/* === work styling === */
-
-.work-banner {
-  display: flex;
-  flex-wrap: wrap;
-  width: 90vw;
-  max-width: var(--max-width);
-  margin-bottom: var(--margin-bottom);
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-  object-fit: contain;
-}
-.work-banner-picture {
-  flex: 1;
-  display: flex;
-  width: 350px;
-  min-width: var(--min-width);
-  align-items: center;
-  justify-content: center;
-}
-.work-banner-picture img {
-  max-width: 350px;
-  max-height: 100%;
-  height: auto;
-  width: auto;
-  object-fit: contain;
-}
-
-.work-column {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 50vw;
-  min-width: var(--min-width);
-  max-width: 800px;
-  margin-bottom: var(--margin-bottom);
-  gap: 30px;
-  align-items: center;
-  justify-content: center;
-  object-fit: contain;
-}
-.work-column-picture {
-  flex: 1;
-  display: flex;
-  width: 100%;
-  min-width: var(--min-width);
-  align-items: center;
-  justify-content: center;
-}
-.work-column-picture img {
-  max-width: 100%;
-  max-height: 100%;
-  height: auto;
-  width: auto;
-  object-fit: contain;
-}
-
-.work-text {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 40%;
-  max-width: 700px;
-  min-width: var(--min-width);
-  margin-bottom: 30px;
-  gap: 80px;
-  object-fit: contain;
 }
