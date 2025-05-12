@@ -29,6 +29,12 @@
   font-weight: 100;
 }
 
+@font-face {
+  font-family: 'IBM Plex Sans JP';
+  src: url('./fonts/IBMPlexSansJP-Thin.ttf');
+  font-weight: 100;
+}
+
 body {
   background-color: #FFFFFF;
   margin: 0;
@@ -40,13 +46,22 @@ body {
   flex-direction: column;
 }
 
-/* projekte main title */
+/* projekte main title + index name */
 h1 {
   font-family: "Bodoni Moda", serif;
   font-weight: 400;
   color: #000000;
   font-size: 56px;
   padding-bottom: 10px;
+}
+
+/* index carousell and line */
+h2 {
+  font-family: "IBM Plex Sans JP", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 56px;
+  color: #FF5338;
 }
 
 /* projekte Unterüberschrift */
@@ -159,14 +174,46 @@ text {
 
 /* === index styling === */
 
+.index-container {
+  display: flex;
+  width: 40vw;
+  min-width: var(--min-width);
+  max-width: var(--max-width);
+  justify-content: center;
+  gap: 5px;
+  /* margin-bottom: 100px; */
+}
+
+.index-name {
+  font-size: clamp(28px, 5vw, 56px);
+  /* font-size: 56px; */
+  color: #FF5338;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(20px, -30%);
+  white-space: nowrap;
+}
+
+.index-line {
+  font-size: clamp(30px, 5vw, 56px);
+  color: #FF5338;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-25%);
+  white-space: nowrap;
+}
+
 .carousel-container {
-  height: 200px;
+  /* height: 200px; */
+  height: clamp(100px, 30vw, 200px);
   width: 600px;
   overflow: hidden;
   position: absolute;
   top: 50%;
   right: 50%;
-  transform: translateY(-40%);
+  transform: translateY(-38%);
   margin-right: 1rem;
   mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 30%,rgba(255, 255, 255, 1) 70%,rgba(255, 255, 255, 0) 100%);
   -webkit-mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 30%,rgba(255, 255, 255, 1) 70%,rgba(255, 255, 255, 0) 100%);
@@ -181,10 +228,10 @@ text {
   font-family: "IBM Plex Sans JP", sans-serif;
   font-weight: 100;
   font-style: normal;
-  font-size: 3rem;
+  font-size: clamp(22px, 4vw, 48px);
   color: #FF5338;
   text-align: right;
-  height: 66px;
+  height: clamp(30px, 7vw, 66px);
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
