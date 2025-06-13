@@ -336,6 +336,11 @@ text {
   object-fit: contain;
 }
 
+.about-imprint {
+  color: #bfbfbf;
+  text-align: center;
+}
+
 
 /* === contents sytling === */
 
