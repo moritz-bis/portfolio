@@ -530,6 +530,10 @@ text {
   text-decoration: none;
 }
 
+.work-link:hover {
+  text-decoration: underline;
+}
+
 /* === project pages styling === */
 
 .project-top {
