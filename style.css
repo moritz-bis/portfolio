@@ -576,12 +576,12 @@ text {
 .work-link {
   all: unset;
   color: inherit;
-  text-decoration: none;
-}
-
-.work-link:hover {
   text-decoration: underline;
 }
+
+/* .work-link:hover {
+  text-decoration: underline;
+} */
 
 /* === project pages styling === */
 
