@@ -127,6 +127,10 @@ p {
   text-decoration-color: #FF5338;
 }
 
+.grey {
+  color: #262626;
+}
+
 nav {
   position: relative;
   top: 0px;
@@ -146,6 +150,7 @@ nav {
   transform: translateY(0px);
 }
 
+/* header */
 text {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
