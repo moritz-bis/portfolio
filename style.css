@@ -41,7 +41,7 @@
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #F7F7F7;
   margin: 0;
   margin-top: 20px;
   display: flex;
@@ -459,10 +459,10 @@ text {
 }
 
 .divider {
-  width: clamp(350px, 80vw, 1200px);
+  width: clamp(350px, 90vw, 1500px);
   margin-bottom: 130px;
   margin-top: 40px;
-  text-align: center;
+  text-align: left;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -472,7 +472,7 @@ text {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: clip;
-  text-align: center;
+  text-align: left;
   font-family: "Cutive Mono", monospace;
   font-size: 16px;
   color: #FF5338;
@@ -480,36 +480,108 @@ text {
 }
 
 
-/* === work styling === */
+/* === work and project styling === */
 
-.work-banner {
+
+.project-top {
   display: flex;
-  flex-wrap: wrap;
+  width: 90%;
+  max-width: var(--max-width);
+  margin-bottom: 100px;
+  padding-top: 100px;
+  align-items: flex-start;
+}
+.project-top-title {
+  flex: 1;
+  width: 90%;
+  max-width: 500px;
+}
+
+
+.work-link {
+  all: unset;
+  color: inherit;
+  text-decoration: underline;
+}
+
+
+.work-banner-grid {
+  display: grid;
   width: 90vw;
   max-width: var(--max-width);
-  margin-bottom: var(--margin-bottom);
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 30px;
-  align-items: center;
-  justify-content: center;
-  object-fit: contain;
+  margin-bottom: var(--margin-bottom);
 }
-.work-banner-picture {
-  flex: 1;
+.work-banner-item {
   display: flex;
   width: 350px;
-  min-width: var(--min-width);
+  height: 500px;
   align-items: center;
   justify-content: center;
+  text-align: left;
 }
-.work-banner-picture img {
+.work-banner-item img {
   max-width: 350px;
-  max-height: 100%;
-  height: auto;
-  width: auto;
-  object-fit: contain;
+  max-height: 500px;
+  object-fit: cover;
+}
+.work-banner-item-video {
+  display: flex;
+  width: 350px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.work-banner-item-video img {
+  max-width: 350px;
+  max-height: 200px;
+  object-fit: cover;
 }
 
-.work-banner-video {
+
+.work-further-grid {
+  display: grid;
+  width: 90vw;
+  max-width: var(--max-width);
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 30px;
+  margin-bottom: var(--margin-bottom);
+}
+.work-further-item {
+  display: flex;
+  width: 160px;
+  height: 160px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+.work-further-item img {
+  max-width: 160px;
+  max-height: 160px;
+  object-fit: cover;
+}
+
+
+
+
+
+/* 
+.work-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  max-width: 700px;
+  min-width: var(--min-width);
+  margin-bottom: 30px;
+  gap: 80px;
+  object-fit: contain;
+} */
+
+/* .work-banner-video {
   display: flex;
   flex-wrap: wrap;
   width: 90vw;
@@ -563,44 +635,9 @@ text {
   height: auto;
   width: auto;
   object-fit: contain;
-}
-
-.work-text {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 40%;
-  max-width: 700px;
-  min-width: var(--min-width);
-  margin-bottom: 30px;
-  gap: 80px;
-  object-fit: contain;
-}
-
-.work-link {
-  all: unset;
-  color: inherit;
-  text-decoration: underline;
-}
-
-/* .work-link:hover {
-  text-decoration: underline;
 } */
 
-/* === project pages styling === */
-
-.project-top {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  justify-content: center;
-  width: 90%;
-  max-width: var(--max-width);
-  gap: 50px;
-  margin-bottom: var(--margin-bottom);
-}
-.project-cover-container {
+/* .project-cover-container {
   flex: 4;
   width: 55dvw;
   min-width: var(--min-width);
@@ -611,14 +648,11 @@ text {
 .project-cover-container img {
   width: 100%;
   height: auto;
-}
-.title-container {
-  flex: 1;
-  min-width: var(--min-width-small);
-}
+} */
 
 
-.project-main-large {
+
+/* .project-main-large {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -727,4 +761,4 @@ text {
   flex: 1;
   display: flex;
   justify-content: flex-end;
-}
+} */
