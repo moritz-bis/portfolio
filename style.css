@@ -94,7 +94,7 @@ h5 {
   color: #FF5338;
   font-size: 56px;
   margin-top: 150px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 /* footer */
@@ -293,6 +293,16 @@ text {
 
 
 /* === contents sytling === */
+.table-of-contents {
+  display: flex;
+  flex-direction: column;
+  width: clamp(350px, 80vw, 800px);
+  justify-content: center;
+  text-align: left;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+
 .contents-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
