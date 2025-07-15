@@ -51,7 +51,7 @@ body {
   flex-direction: column;
 }
 
-/* projekte main title + index name */
+/* projekte title + index name */
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -60,22 +60,14 @@ h1 {
   padding-bottom: 10px;
 }
 
-/* h1 {
-  font-family: "Bodoni Moda", serif;
-  font-weight: 400;
-  color: #000000;
-  font-size: 56px;
-  padding-bottom: 10px;
-} */
-
 /* index carousell and line */
-h2 {
+/* h2 {
   font-family: "IBM Plex Sans JP", sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 56px;
   color: #FF5338;
-}
+} */
 
 /* projekte Unterüberschrift */
 h3 {
@@ -87,21 +79,22 @@ h3 {
 }
 
 /* projekte Navigation unten */
-h4 {
+/* h4 {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
   font-size: clamp(18px, 3vw, 22px);
   color: #FF5338;
   padding-bottom: 20px;
-}
+} */
 
 /* Moritz Bisjak index*/
 h5 {
   font-family: "Bodoni Moda", serif;
   font-weight: 400;
-  color: #000000;
+  color: #FF5338;
   font-size: 56px;
-  padding-bottom: 10px;
+  margin-top: 150px;
+  margin-bottom: 100px;
 }
 
 /* footer */
@@ -300,12 +293,33 @@ text {
 
 
 /* === contents sytling === */
+.contents-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FF5338;
+  line-height: 1,2;
+  text-decoration: none;
+}
+.contents-title:hover {
+  text-decoration: underline;
+}
+
+
+.contents-text {
+  font-family: "Cutive Mono", monospace;
+  font-size: 14px;
+  color: #FF5338;
+  line-height: 1,2;
+  text-decoration: none;
+}
+
 
 .contents-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1200px;
+  width: clamp(350px, 80vw, 800px);
   gap: 20px;
   margin-top: 30px;
   margin-bottom: 80px;
