@@ -107,7 +107,7 @@ h5 {
 /* footer */
 h6 {
   font-family: "Cutive Mono", monospace;
-  font-size: 16px;
+  font-size: 14px;
   color: #FF5338;
   font-weight: 400;
   line-height: 1,2;
@@ -149,6 +149,30 @@ nav {
   cursor: pointer;
   transform: translateY(0px);
 }
+
+
+
+.divider {
+  width: clamp(350px, 90vw, 1500px);
+  margin-bottom: 60px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.divider-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  text-align: left;
+  font-family: "Cutive Mono", monospace;
+  font-size: 16px;
+  color: #FF5338;
+  font-weight: 400;
+}
+
+
+
 
 /* header */
 text {
@@ -278,21 +302,6 @@ text {
   vertical-align: top;
 }
 
-/* .about-minime {
-  display: flex;
-  flex-wrap: wrap;
-  width: 150px;
-  margin-bottom: 20px;
-  align-items: center;
-  justify-content: center;
-  object-fit: contain;
-}
-.about-minime img {
-  width: 150px;
-  height: auto;
-  object-fit: contain;
-} */
-
 .about-imprint {
   color: #bfbfbf;
   text-align: center;
@@ -300,91 +309,62 @@ text {
 
 
 /* === contents sytling === */
-.contents-grid {
+
+/* size 160+160+30= 350 */
+.content-grid {
   display: grid;
   width: 90vw;
-  max-width: 700px;
-  /* grid-template-columns: 1fr; */
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  row-gap: 60px;
-  margin-bottom: var(--margin-bottom);
-  justify-items: center;
+  max-width: var(--max-width);
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
 }
-.contents-grid-item {
+.content-grid-both {
   display: flex;
-  width: 300px;
-  height: 200px;
+  width: 350px;
+  height: 175px;
   align-items: center;
   justify-content: center;
   text-align: left;
+  color: #FF5338;
   text-decoration: none;
 }
-.contents-grid-item img {
-  width: 200px;
-  height: 200px;
-  position: absolute;
-  object-fit: contain;
-  object-position: center;
-  display: block;
-  border-radius: 5px;
+.content-grid-item {
+  display: flex;
+  width: 175px;
+  height: 175px;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
 }
-/* .contents-grid-item:hover img {
-  outline: 2px solid #FF5338;
-  outline-offset: -2px;
-} */
-.contents-title {
-  position: absolute;
-  text-align: center;
+.content-grid-item img {
+  max-width: 160px;
+  max-height: 160px;
+  object-fit: cover;
+}
+.content-grid-item p {
+  color: #FF5338;
+}
+.content-grid-both:hover {
   text-decoration: underline;
 }
-.contents-text {
-  position: absolute;
-  width: 150px;
-  margin-top: 130px;
-  align-self: flex-start;
-  /* align-self: flex-end; */
-  /* text-align: end; */
-}
-.contents-grid-item:hover .contents-title {
-  text-decoration: none;
-}
 
-
-.contents-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  width: clamp(350px, 80vw, 800px);
-  gap: 20px;
-  margin-top: 30px;
-  margin-bottom: 80px;
-  justify-items: center;
+/* .divider-content {
+  width: clamp(350px, 90vw, 1500px);
+  margin-bottom: 40px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
-
-.contents-main-item {
-  width: 200px;
-  height: 200px;
-  justify-content: center;
-}
-.contents-main-item img {
-  width: 200px;
-  height: 200px;
-  object-fit: contain;
-  object-position: center;
-  display: block;
-  background-color: #fff;
-  border-radius: 5px;
-}
-.contents-main-item:hover img {
-  outline: 2px solid #FF5338;
-  outline-offset: -2px;
-}
+.divider-content p {
+  color: #FF5338;
+} */
 
 
 
 
 /* === work and project styling === */
-
-
 .project-top {
   display: flex;
   width: 90%;
@@ -463,27 +443,6 @@ text {
   max-width: 160px;
   max-height: 160px;
   object-fit: cover;
-}
-
-
-.divider {
-  width: clamp(350px, 90vw, 1500px);
-  margin-bottom: 130px;
-  margin-top: 40px;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.divider-text {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: clip;
-  text-align: left;
-  font-family: "Cutive Mono", monospace;
-  font-size: 16px;
-  color: #FF5338;
-  font-weight: 400;
 }
 
 
