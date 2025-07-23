@@ -441,6 +441,10 @@ text {
 height: 500px;
 }
 
+.work-banner-video {
+height: 200px;
+}
+
 
 .work-further-grid {
   display: grid;
