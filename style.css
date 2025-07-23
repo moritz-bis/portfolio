@@ -436,6 +436,11 @@ text {
   object-fit: cover;
 }
 
+/* gegen lazy scroll verschiebung */
+.work-banner-photo {
+height: 500px;
+}
+
 
 .work-further-grid {
   display: grid;
