@@ -439,10 +439,15 @@ text {
 /* gegen lazy scroll verschiebung */
 .work-banner-photo {
 height: 500px;
+width: 350px;
 }
-
 .work-banner-video {
 height: 200px;
+width: 350px;
+}
+.work-banner-furtherphoto {
+height: 160px;
+width: 160px;
 }
 
 
