@@ -48,7 +48,7 @@
 body {
   background-color: #F7F7F7;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 0px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -187,7 +187,7 @@ nav {
   text-overflow: clip;
   text-align: left;
   font-family: "Cutive Mono", monospace;
-  font-size: 16px;
+  font-size: 14px;
   color: #FF5338;
   font-weight: 400;
 }
@@ -415,7 +415,7 @@ text {
   display: flex;
   width: 350px;
   max-height: 500px;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   text-align: left;
 }
